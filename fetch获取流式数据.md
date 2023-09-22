@@ -1,3 +1,4 @@
+```typescript
 fetch("http://localhost:8080/flux/dataStream2").then(res=>{
     if(res.ok){
         const reader =  res.body.getReader();
@@ -17,3 +18,5 @@ function streamParse(reader){
         console.error('Error reading stream:', error);
     });
 }
+```
+
